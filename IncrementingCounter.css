@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #686de6;
+}
+.counter-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+.counter{
+    font-size: 60px;
+    margin-top: 10px;
+ 
+}
+@media(max-width:580px){
+    body{
+        flex-direction: column;
+    }
+    .counter{
+        font-size: 70px;
+    }
+    span{
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
