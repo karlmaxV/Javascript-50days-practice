@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    background-color: rgb(10, 2, 83);
+    margin: 0;
+    color: white;
+    flex-wrap: wrap;
+    padding-top:3rem ;
+
+}
+.add{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: aqua;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.note{
+    background-color: white;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.2);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+
+}
+.note .tools{
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+}
+.note .tools button{
+    background: transparent;
+    border: none;
+    color: rgb(45, 6, 118);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.note .tools button::after{
+    content: '';
+    outline: none;
+}
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+
+}
+.hidden{
+    display: none;
+}
