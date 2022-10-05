@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+}
+.navbar{
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .3s ease-in;
+
+}
+.navbar .logo{
+    font-weight: bolder;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+    color: white;
+    font-weight: 100;
+
+}
+.navbar.active{
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.3);
+}
+.navbar.active a{
+    color: #222;
+
+}
+.navbar.active .container{
+    padding: 10px 0;
+
+}
+.navbar a.current, 
+.navbar a:hover{
+    color: #00a2ff;
+    font-weight: 500;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.hero{
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.hero h1{
+    font-size: 50px;
+    margin: -20px 0 20px;
+    
+}
+.hero p{
+    font-size: 20px;
+}
+.content h3{
+    font-size: 150%;
+    margin: 20px 0;
+    font-weight: 400;
+}
+.content p{
+    color: #555;
+    line-height: 30px;
+
+}
